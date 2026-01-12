@@ -27,7 +27,7 @@
                     Breez's AI-powered shopping companion transforms how people plan, shop, and cook.
                 </p>
 
-                <button class="hero-btn">Get Started!</button>
+                <button class="hero-btn" id="startDemoBtn">Start Demo!</button>
             </div>
         </section>
     </main>
@@ -85,6 +85,11 @@
                 }
             }, 4000);
         });
+
+        document.getElementById('startDemoBtn').addEventListener('click', () => {
+            window.location.href = 'https://breezai.app/organization/82/dp/auth/BREEZ-Login';
+        });
+
     </script>
 </body>
 
