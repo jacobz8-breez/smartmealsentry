@@ -1,6 +1,3 @@
-/* =========================================================
-   VARIABLES
-========================================================= */
 :root {
     --primary: #33457b;
     --primary-dark: #283660;
@@ -9,9 +6,6 @@
     --text-dark: #333;
 }
 
-/* =========================================================
-   GLOBAL RESET
-========================================================= */
 * {
     box-sizing: border-box;
 }
@@ -25,103 +19,25 @@ html, body {
     min-height: 100%;
 }
 
-/* Ensure content never hides behind sticky footer */
 body {
-    padding-bottom: 48px; /* MUST match footer height */
+    padding-bottom: 48px;
 }
 
-/* =========================================================
-   HEADER
-========================================================= */
-.site-header {
-    background: #fff;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.header-inner {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 5px 40px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-}
-
-.logo img {
-    height: 75px;
-}
-
-/* =========================================================
-   NAVIGATION
-========================================================= */
-.main-nav {
-    display: flex;
-    justify-content: center;
-    gap: 36px;
-    align-items: center;
-}
-
-.main-nav a {
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.main-nav a:hover {
-    font-weight: 600;
-    color: var(--accent);
-}
-
-/* =========================================================
-   HEADER BUTTONS
-========================================================= */
-.header-actions {
-    display: flex;
-    gap: 16px;
-}
-
-.btn-outline {
-    padding: 10px 26px;
-    border: 1px solid var(--primary);
-    border-radius: 999px;
-    color: var(--primary);
-    background: transparent;
-    text-decoration: none;
-}
-
-.btn-solid {
-    padding: 10px 28px;
-    border-radius: 999px;
-    background: var(--primary);
-    color: #fff;
-    text-decoration: none;
-}
-
-/* =========================================================
-   HERO
-========================================================= */
 .hero {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-
     min-height: 100vh;
-
-    padding: clamp(120px, 14vh, 180px)
-             clamp(40px, 8vw, 120px);
-
+    padding: clamp(120px, 14vh, 180px) clamp(40px, 8vw, 120px);
     display: flex;
     align-items: center;
     justify-content: center;
-
     background:
         linear-gradient(135deg,
             rgba(0, 0, 0, 0.65),
             rgba(0, 0, 0, 0.45)),
         url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1920&h=1080&fit=crop')
         center / cover no-repeat;
-
     background-attachment: fixed;
 }
 
@@ -162,19 +78,14 @@ body {
     cursor: pointer;
 }
 
-/* =========================================================
-   STICKY THIN FOOTER
-========================================================= */
 .site-footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 48px;
-
     background: var(--primary);
     border-top: 1px solid rgba(255, 255, 255, 0.15);
-
     z-index: 1000;
 }
 
@@ -183,7 +94,6 @@ body {
     height: 100%;
     margin: 0 auto;
     padding: 0 24px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -212,22 +122,9 @@ body {
     opacity: 0.85;
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-@media (max-width: 900px) {
-    .main-nav {
-        display: none;
-    }
-
-    .header-inner {
-        grid-template-columns: auto 1fr;
-    }
-}
-
 @media (max-width: 600px) {
     body {
-        padding-bottom: 64px; /* slightly taller footer on mobile */
+        padding-bottom: 64px;
     }
 
     .site-footer {
@@ -240,4 +137,3 @@ body {
         gap: 6px;
     }
 }
-
