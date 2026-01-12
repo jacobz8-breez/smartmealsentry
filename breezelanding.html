@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SmartMeals</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="breez.css">
+</head>
+
+<body>
+    <!-- ================= MAIN ================= -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <a href="https://www.mybreezai.com/" class="hero-logo-link">
+                    <img src="smartmealslogo.png" alt="SmartMeals" class="hero-title">
+                </a>
+
+                <p class="hero-text" id="heroText">
+                    Breez's AI-powered shopping companion transforms how people plan, shop, and cook.
+                </p>
+
+                <button class="hero-btn" id="startDemoBtn">Start Demo!</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="https://www.mybreezai.com/copy-of-privacy-policy">Terms & Conditions</a>
+                <a href="https://www.mybreezai.com/privacy-policy-1">Privacy Policy</a>
+                <a href="https://www.mybreezai.com/contact">Contact Us</a>
+            </div>
+            <div class="footer-copy">
+                © 2026 Breez AI, LLC
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroText = document.getElementById('heroText');
+            const heroBtn = document.querySelector('.hero-btn');
+
+            const texts = [
+                "Breez's AI-powered shopping companion transforms how people plan, shop, and cook.",
+                "Every meal comes with a detail-rich recipe card, so users know exactly what they’re getting before they start cooking.",
+                "Users can save the recipes they love so their best meals are always within reach.",
+                "Elevate your dining experience with recipes that inspire—no matter your skill level."
+            ];
+
+            let index = 0;
+
+            setInterval(() => {
+                heroText.classList.add('fade-out');
+
+                setTimeout(() => {
+                    index = (index + 1) % texts.length;
+                    heroText.textContent = texts[index];
+                    heroText.classList.remove('fade-out');
+                }, 400);
+
+                if (index === texts.length - 1) {
+                    heroBtn.classList.add('highlighted');
+                }
+            }, 4000);
+        });
+
+        document.getElementById('startDemoBtn').addEventListener('click', () => {
+            window.location.href = 'https://breezai.app/organization/82/dp/auth/BREEZ-Login';
+        });
+
+    </script>
+</body>
+
+</html>
