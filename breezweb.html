@@ -11,234 +11,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="stats.css">
-    <link rel="stylesheet" href="partners.css">
+    <link rel="stylesheet" href="breez.css">
 </head>
 
 <body>
-
-    <!-- ================= HEADER ================= -->
-    <header class="site-header">
-        <div class="header-inner">
-
-            <a href="https://www.mybreezai.com/" class="logo">
-                <img src="breezlogo.png" alt="BreezAI Logo">
-            </a>
-
-            <nav class="main-nav">
-
-                <!-- HOW IT WORKS -->
-                <div class="nav-item has-dropdown">
-                    <a href="#">How It Works</a>
-                    <div class="dropdown">
-                        <a href="https://www.mybreezai.com/features">Basic Features</a>
-                        <a href="https://www.mybreezai.com/advanced-features">Advanced Features</a>
-                        <a href="https://www.mybreezai.com/white-label-benefits">Grocer Benefits</a>
-                    </div>
-                </div>
-
-                <!-- NEWS -->
-                <a href="https://www.mybreezai.com/blog" class="nav-link">News</a>
-
-                <!-- ABOUT BREEZ -->
-                <div class="nav-item has-dropdown">
-                    <a href="#">About Breez</a>
-                    <div class="dropdown">
-                        <a href="https://www.mybreezai.com/about-us">Our Story</a>
-                        <a href="https://www.mybreezai.com/our-team">Our Team</a>
-                        <a href="https://www.mybreezai.com/our-mission-values">Mission & Values</a>
-                    </div>
-                </div>
-
-            </nav>
-
-
-            <div class="header-actions">
-                <a href="https://breezai.app/organization/82/dp/auth/BREEZ-Login" class="btn-outline">Try the App</a>
-                <a href="https://www.mybreezai.com/book-a-demo" class="btn-solid">Book a Demo</a>
-            </div>
-
-        </div>
-    </header>
-
     <!-- ================= MAIN ================= -->
     <main>
-
         <section class="hero">
             <div class="hero-content">
-                <img src="smartmeals.png" alt="SmartMeals" class="hero-title">
+                <a href="https://www.mybreezai.com/" class="hero-logo-link">
+                    <img src="smartmealslogo.png" alt="SmartMeals" class="hero-title">
+                </a>
 
                 <p class="hero-text" id="heroText">
                     Breez's AI-powered shopping companion transforms how people plan, shop, and cook.
                 </p>
 
-                <button class="hero-btn">Start Demo!</button>
-            </div>
-
-            <!-- CAROUSEL -->
-            <div class="carousel-container">
-                <div class="carousel">
-                    <div class="carousel-slide active">
-                        <img src="sm1.png"
-                            alt="Slide 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="sm2.png"
-                            alt="Slide 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="sm3.png"
-                            alt="Slide 3">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=550&fit=crop"
-                            alt="Slide 4">
-                    </div>
-                </div>
-
-                <!-- Navigation Buttons -->
-                <button class="carousel-btn carousel-prev" aria-label="Previous slide">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-                <button class="carousel-btn carousel-next" aria-label="Next slide">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
-                    <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
-                    <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
-                    <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
-                </div>
+                <button class="hero-btn">Get Started!</button>
             </div>
         </section>
-
     </main>
 
-    <section class="product-stats">
-        <div class="product-stats-inner">
-
-            <div class="product-stats-header">
-                <h2>Proven Results for Grocers & Shoppers</h2>
-                <p>Designed to increase engagement, loyalty, and basket size while
-                    saving shoppers meaningful time every week.</p>
-            </div>
-
-            <div class="product-stats-grid">
-                <div class="stat-card">
-                    <div class="stat-value">22%</div>
-                    <div class="stat-label">Larger Baskets</div>
-                    <div class="stat-description">
-                        Shoppers add full meal ingredients to cart
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-value">72%</div>
-                    <div class="stat-label">Loyalty Growth</div>
-                    <div class="stat-description">
-                        Increase in loyalty sign-ups at deployed retailers
-                    </div>
-                </div>
-
-                <div class="stat-card">
-                    <div class="stat-value">2 min</div>
-                    <div class="stat-label">Time to Checkout</div>
-                    <div class="stat-description">
-                        From “What’s for dinner?” to cart
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="product-stats-cta">
-            <button class="hero-btn">Start Demo!</button>
-        </div>
-
-    </section>
-
-
-    <!-- ================= PARTNERS SECTION ================= -->
-    <section class="partners-section">
-        <div class="partners-container">
-            <h2 class="partners-heading">Working With</h2>
-
-            <div class="partners-carousel-wrapper">
-                <div class="partners-carousel">
-                    <!-- Add your partner logos here - duplicate the track for seamless loop -->
-                    <div class="partners-track">
-                        <!-- Partner Logo 1 -->
-                        <div class="partner-logo">
-                            <img src="awg.webp" alt="Partner 1">
-                        </div>
-
-                        <!-- Partner Logo 2 -->
-                        <div class="partner-logo">
-                            <img src="dgs_pc.png" alt="Partner 2">
-                        </div>
-
-                        <!-- Partner Logo 3 -->
-                        <div class="partner-logo">
-                            <img src="awg.webp" alt="Partner 3">
-                        </div>
-
-                        <!-- Partner Logo 4 -->
-                        <div class="partner-logo">
-                            <img src="thriftway.png" alt="Partner 4">
-                        </div>
-
-                        <!-- Partner Logo 5 -->
-                        <div class="partner-logo">
-                            <img src="domats.png" alt="Partner 5">
-                        </div>
-
-                        <!-- Partner Logo 6
-                        <div class="partner-logo">
-                            <img src="partner-logo-6.png" alt="Partner 6">
-                        </div> -->
-                    </div>
-
-                    <!-- Duplicate track for seamless infinite scroll -->
-                    <div class="partners-track" aria-hidden="true">
-                        <div class="partner-logo">
-                            <img src="awg.webp" alt="Partner 1">
-                        </div>
-                        <div class="partner-logo">
-                            <img src="dgs_pc.png" alt="Partner 2">
-                        </div>
-                        <div class="partner-logo">
-                            <img src="thriftway.png" alt="Partner 3">
-                        </div>
-                        <div class="partner-logo">
-                            <img src="awg.webp" alt="Partner 4">
-                        </div>
-                        <div class="partner-logo">
-                            <img src="domats.png" alt="Partner 5">
-                        </div>
-                        <!-- <div class="partner-logo">
-                            <img src="partner-logo-6.png" alt="Partner 6">
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
-
         <div class="footer-inner">
-            <!-- Logo -->
-            <div class="footer-logo">
-                <img src="breezai-logo-white.png" alt="BreezAI White Logo">
-            </div>
-
             <!-- Links -->
             <div class="footer-links">
                 <a href="https://www.mybreezai.com/copy-of-privacy-policy">Terms & Conditions</a>
@@ -260,161 +57,35 @@
 
     </footer>
 
-    <!-- CAROUSEL SCRIPT -->
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const slides = document.querySelectorAll('.carousel-slide');
-            const indicators = document.querySelectorAll('.indicator');
-            const prevBtn = document.querySelector('.carousel-prev');
-            const nextBtn = document.querySelector('.carousel-next');
+        document.addEventListener('DOMContentLoaded', () => {
             const heroText = document.getElementById('heroText');
             const heroBtn = document.querySelector('.hero-btn');
-            let currentSlide = 0;
-            let autoplayInterval;
-            let userInteracted = false; // Flag to track if user has manually interacted
 
-            // Text content for each slide
-            const slideTexts = [
+            const texts = [
                 "Breez's AI-powered shopping companion transforms how people plan, shop, and cook.",
                 "Every meal comes with a detail-rich recipe card, so users know exactly what they’re getting before they start cooking.",
-                "Users can save the recipes they love so their best meals are always within reach. Keep a library of go-to favorites they can revisit anytime; no searching, no starting over.",
-                "Elevate your dining experience with recipes that inspire. Whether you're a novice or a seasoned chef, find meals that match your skill level and preferences."
+                "Users can save the recipes they love so their best meals are always within reach.",
+                "Elevate your dining experience with recipes that inspire—no matter your skill level."
             ];
 
-            function showSlide(index) {
-                // Don't go past the last slide
-                if (index >= slides.length) {
-                    stopAutoplay();
-                    return;
-                }
+            let index = 0;
 
-                // Don't go before the first slide
-                if (index < 0) {
-                    return;
-                }
+            setInterval(() => {
+                heroText.classList.add('fade-out');
 
-                currentSlide = index;
-
-                // Remove active class from all slides and indicators
-                slides.forEach(slide => slide.classList.remove('active'));
-                indicators.forEach(indicator => indicator.classList.remove('active'));
-
-                // Add fade-out effect to text
-                heroText.style.opacity = '0';
-
-                // Wait for fade-out, then change text and fade in
                 setTimeout(() => {
-                    heroText.textContent = slideTexts[currentSlide];
-                    heroText.style.opacity = '1';
-                }, 300);
+                    index = (index + 1) % texts.length;
+                    heroText.textContent = texts[index];
+                    heroText.classList.remove('fade-out');
+                }, 400);
 
-                // Add active class to current slide and indicator
-                slides[currentSlide].classList.add('active');
-                indicators[currentSlide].classList.add('active');
-
-                // Update button states
-                updateNavigationButtons();
-
-                // Highlight "Try Now" button when reaching last slide (with 2-second delay)
-                if (currentSlide === slides.length - 1) {
-                    stopAutoplay();
-                    setTimeout(() => {
-                        heroBtn.classList.add('highlighted');
-                    }, 2000);
-                } else {
-                    heroBtn.classList.remove('highlighted');
+                if (index === texts.length - 1) {
+                    heroBtn.classList.add('highlighted');
                 }
-            }
-
-            function updateNavigationButtons() {
-                // Disable/enable prev button
-                if (currentSlide === 0) {
-                    prevBtn.style.opacity = '0.5';
-                    prevBtn.style.cursor = 'not-allowed';
-                } else {
-                    prevBtn.style.opacity = '1';
-                    prevBtn.style.cursor = 'pointer';
-                }
-
-                // Disable/enable next button
-                if (currentSlide === slides.length - 1) {
-                    nextBtn.style.opacity = '0.5';
-                    nextBtn.style.cursor = 'not-allowed';
-                } else {
-                    nextBtn.style.opacity = '1';
-                    nextBtn.style.cursor = 'pointer';
-                }
-            }
-
-            function nextSlide() {
-                if (currentSlide < slides.length - 1) {
-                    showSlide(currentSlide + 1);
-                }
-            }
-
-            function prevSlide() {
-                if (currentSlide > 0) {
-                    showSlide(currentSlide - 1);
-                }
-            }
-
-            // Event listeners - now permanently stop autoplay on user interaction
-            prevBtn.addEventListener('click', () => {
-                userInteracted = true; // Set flag to permanently disable autoplay
-                prevSlide();
-                stopAutoplay(); // Stop autoplay permanently
-            });
-
-            nextBtn.addEventListener('click', () => {
-                userInteracted = true; // Set flag to permanently disable autoplay
-                nextSlide();
-                stopAutoplay(); // Stop autoplay permanently
-            });
-
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', () => {
-                    userInteracted = true; // Set flag to permanently disable autoplay
-                    showSlide(index);
-                    stopAutoplay(); // Stop autoplay permanently
-                });
-            });
-
-            // Autoplay functionality
-            function startAutoplay() {
-                // Don't start autoplay if user has already interacted
-                if (userInteracted) {
-                    return;
-                }
-                
-                autoplayInterval = setInterval(() => {
-                    if (currentSlide < slides.length - 1) {
-                        nextSlide();
-                    } else {
-                        stopAutoplay();
-                    }
-                }, 4000);
-            }
-
-            function stopAutoplay() {
-                clearInterval(autoplayInterval);
-            }
-
-            // Initialize
-            updateNavigationButtons();
-            startAutoplay();
-
-            // Pause on hover - only if user hasn't manually interacted
-            const carouselContainer = document.querySelector('.carousel-container');
-            carouselContainer.addEventListener('mouseenter', stopAutoplay);
-            carouselContainer.addEventListener('mouseleave', () => {
-                // Only resume autoplay if user hasn't manually interacted and not on last slide
-                if (!userInteracted && currentSlide < slides.length - 1) {
-                    startAutoplay();
-                }
-            });
+            }, 4000);
         });
     </script>
-
 </body>
 
 </html>
